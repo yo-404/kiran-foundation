@@ -161,7 +161,8 @@ z-index: 999;
 
 /* Start Blog CSS */
 #blog-area {
-    margin: 60px 0px;
+    margin: 20px 0px;
+
 }
 .blog-content {
   background: #F2F2F2;
@@ -228,8 +229,10 @@ div#service-area-main {
 /* End Services CSS */
 
 /* Start Testimornial CSS */
-#testimornial-area{
-  margin: 60px 0;
+#testimonial-area{
+  margin: 20 0 20 0;
+  background-color: #777;
+
 }
 .contact-us {
   color: white;
@@ -248,10 +251,10 @@ h2 {
     text-align: left;
 }
 .content-link {
-    background: #fff none repeat scroll 0 0;
+    background: #178A27 none repeat scroll 0 0;
     border: 1px solid #cdcdcd;
     border-radius: 10px;
-    color: #666;
+    color: #fff;
     display: inline-block;
     font-size: 18px;
     padding: 10px 30px;
@@ -263,7 +266,8 @@ h2 {
 }
 .content-link:hover,
 .content-link:focus {
-    background: #E6E6E6 none repeat scroll 0 0;
+    background: #449D44 none repeat scroll 0 0;
+    color: #fff;
 }
 
 /* End Testimornial CSS */
@@ -356,12 +360,13 @@ input {
 
 .about-section {
     height: 100%;
-    padding-top: 70px;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 .services-section {
     height: 100%;
-   /* padding-top: 150px;*/
+    padding-top: 50px;
 }
 .tm-box {
   background-color: #F2F2F2;
@@ -607,4 +612,9 @@ input {
 
 @media only screen and (max-width: 480px) {
   header { height: 50vh; }
+}
+
+h3.section_title {
+    font-size: 35px;
+    color: #353535;
 }
