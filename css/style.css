@@ -34,7 +34,7 @@ body {
   overflow-x: hidden;
 }
 
-img {
+img:not(.kf_logo) {
   max-width: 100%;
   height: auto;
   border: none;
