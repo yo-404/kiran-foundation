@@ -19,13 +19,25 @@
 			</script>
 			<script async src='https://www.google-analytics.com/analytics.js'></script>
 		{% endif %}
+	<!--	<link rel="stylesheet" href="menu.css">  -->
 	</head>
 	<body>
-		<nav>
-			<div class="container">
-			<!--	<img src="old_website\favicons\android-icon-36x36.png" alt="img"> -->
-			</div>
-		</nav>
+		<nav class="navbar">
+            <a href="#"> <img src="images/logo2.png" class="logo"> </a> 
+            <!--<img src="images/logo2.png" class="logo" > -->
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li><a href="#section2">Initiatives</a></li>
+                <li><a href="#section3">Scholarship</a></li>
+                <li><a href="#section4">Contact</a></li>
+                <li><a href="#footer-area">Join Us</a></li>
+                <li><a href="#footer-area">New</a></li>
+				<li><a href="#footer-area">Updates</a></li>
+				<li><a href="#footer-area">Pages</a></li>
+            </ul>
+        </nav>
+
 		<div class="content">
 			{{ content }}
 		</div>
