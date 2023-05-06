@@ -5,11 +5,54 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		{% seo %}
+		<meta name="title" content="Kiran Foundation">
+		<meta name="description" content="Kiran Foundation works with families from underprivileged and marginalised section of society, to reach their full potential.">
 
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://kiran.foundation/">
+		<meta property="og:title" content="Kiran Foundation">
+		<meta property="og:description" content="Kiran Foundation works with families from underprivileged and marginalised section of society, to reach their full potential.">
+		<meta property="og:image" content="https://kiran.foundation/branding/logo.png">
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://kiran.foundation">
+		<meta property="twitter:title" content="Kiran Foundation">
+		<meta property="twitter:description" content="Kiran Foundation works with families from underprivileged and marginalised section of society, to reach their full potential.">
+		<meta property="twitter:image" content="https://kiran.foundation/branding/logo.png">
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<meta itemprop="name" content="Kiran Foundation"/>
+		<meta itemprop="description" content="Kiran Foundation: Giving wings to the hopes and dreams."/>
+		<meta itemprop="image" content="https://kiran.foundation/branding/logo.png"/>
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
+
+		<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/favicons//apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/favicons//apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/favicons//android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png" sizes="32x32">
+		<link rel="manifest" href="/manifest.json">
 
 		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
 			<script>
@@ -23,21 +66,42 @@
 	</head>
 	<body>
 		
-		<nav class="navbar">
-            <a href="#"> <img src="images/logo2.png" class="logo"> </a> 
-            <!--<img src="images/logo2.png" class="logo" > -->
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
-            <ul class="menu">
-                <li><a href="#section2">Initiatives</a></li>
-                <li><a href="#section3">Scholarship</a></li>
-                <li><a href="#section4">Contact</a></li>
-                <li><a href="#footer-area">Join Us</a></li>
-                <li><a href="#footer-area">New</a></li>
-				<li><a href="#footer-area">Updates</a></li>
-				<li><a href="#footer-area">Pages</a></li>
-            </ul>
-        </nav>
+		<!-- nav class="navbar">
+			<div class="container" >
+				<a href="#"> <img src="images/logo2.png" class="logo"> </a> 
+				<!--<img src="images/logo2.png" class="logo" > ->
+				<input class="menu-btn" type="checkbox" id="menu-btn" />
+				<label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+				<ul class="menu">
+					<li><a href="#section2">Initiatives</a></li>
+					<li><a href="#section3">Scholarship</a></li>
+					<li><a href="#section4">Contact</a></li>
+					<li><a href="#footer-area">Join Us</a></li>
+					<li><a href="#footer-area">New</a></li>
+				</ul>
+			</div>
+        </nav -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="single-page-nav sticky-wrapper" id="tmNavbar">
+					<ul class="nav navbar-nav">
+						<a href="#section1"><img class="kf_logo" src="branding/logo2.png" height="75" alt="Logo"
+								align="left"></a>
+						<li><a href="#section2">Initiatives</a></li>
+						<li><a href="#section3">Scholarship</a></li>
+						<li><a href="#section4">Contact</a></li>
+						<li><a href="#footer-area">Join Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 		<div class="content">
 			{{content}}
 		</div>
