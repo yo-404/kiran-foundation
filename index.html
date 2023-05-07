@@ -15,35 +15,37 @@ title: "Kiran Foundation : I am Possible!"
 			</div>
 		</div>
 		<div class="column">
-			<img src="{{ site.baseurl }}/images/1-1.jpg" alt="Smt. Kiran Jain">
+			<img src="{{ site.baseurl }}/images/mom.jpg" alt="Smt. Kiran Jain">
+
 		</div>
 	</div>
 </header>
-<div class="container">
-	<h2 class="editable" style="text-align: center;">I am Possible!</h2>
 
-	<ul class="thirds">
-		<li>
-			<div class="image">{% include icons/site.html icon="vision" %}</div>
-			<h3 class="editable">Vision</h3>
-			<p class="editable">New Zealand has a human population of just 4.5M while there are 70M sheep. </p>
-		</li>
+<div class="darker">
+	<div class="container">
+		<h2 class="editable">Updates</h2>
+		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
+		<div class="posts">
+			{% for post in site.posts limit:3 %}
+			
+				<div class="post">
+					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
+					<div class="post-content">
+						<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
+						<h3>{{ post.title }}</h3>
 
-		<li>
-			<div class="image">{% include icons/site.html icon="mission" %}</div>
-			<h3 class="editable">Mission</h3>
-			<p class="editable">“ज्ञान  के द्वारा समाज के कमजोर लोगों को सशक्त करना एवं सामाजिक परिवर्तन लाना।” </p>
-		</li>
-
-		<li>
-			<div class="image">{% include icons/site.html icon="motto" %}</div>
-			<h3 class="editable">Motto</h3>
-			<p class="editable">कर्म ही तुम्हारी तपस्या है।</p>
-		</li>
-	</ul>
+						{{ post.content }}
+				
+						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
 </div>
 
 <div class="container">
+	<h1 class="editable" style="text-align: center;">Our Initiatives </h1> <br/>  <br/>
 	<div class="columns">
 		<div>
 			<img src="{{ site.baseurl }}/images/i1.jpg" width="600" alt="img">
@@ -96,15 +98,39 @@ title: "Kiran Foundation : I am Possible!"
 <div class="container">
 	<hr>
 	<blockquote>
-		<p class="quote editable">The ultimate measure of a sheep is not where he stands in moments of comfort and convenience, but where he stands at times of challenge and controversy.</p>
-		<div class="attribute">
+		<p class="quote editable">कर्म ही तुम्हारी तपस्या है।</p>
+		<!-- div class="attribute">
 			<p class="meta">
 				<span class="image"><img class="editable" src="{{ site.baseurl }}/images/wooly.jpg" alt="Wooly"></span>
 				<span class="author editable"><strong>Wooly McBaa</strong></span>
 			</p>
-		</div>
+		</div -->
 	</blockquote>
 </div>
+<div class="container">
+	<h1 class="editable" style="text-align: center;">I am Possible!</h1>
+
+	<ul class="thirds">
+		<li>
+			<div class="image">{% include icons/site.html icon="vision" %}</div>
+			<h3 class="editable">Vision</h3>
+			<p class="editable">New Zealand has a human population of just 4.5M while there are 70M sheep. </p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="mission" %}</div>
+			<h3 class="editable">Mission</h3>
+			<p class="editable">“ज्ञान  के द्वारा समाज के कमजोर लोगों को सशक्त करना एवं सामाजिक परिवर्तन लाना।” </p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="motto" %}</div>
+			<h3 class="editable">Motto</h3>
+			<p class="editable">कर्म ही तुम्हारी तपस्या है।</p>
+		</li>
+	</ul>
+</div>
+
 
 <div class="darker">
 	<div class="container">
@@ -114,35 +140,5 @@ title: "Kiran Foundation : I am Possible!"
 			<input type="text" name="EMAIL" placeholder="Email">
 			<input type="submit" value="Sign up"/>
 		</form>
-	</div>
-</div>
-
-<div class="container" id="donate">
-	<h2 class="editable">Make a donation</h2>
-	<div class="donate">
-		{{ site.donation_embed }}
-	</div>
-</div>
-
-<div class="darker">
-	<div class="container">
-		<h2 class="editable">Updates</h2>
-		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
-		<div class="posts">
-			{% for post in site.posts limit:3 %}
-			
-				<div class="post">
-					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
-					<div class="post-content">
-						<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
-						<h3>{{ post.title }}</h3>
-
-						{{ post.content }}
-				
-						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
-					</div>
-				</div>
-			{% endfor %}
-		</div>
 	</div>
 </div>
