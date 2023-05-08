@@ -3,10 +3,18 @@
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
-	padding: 50px 30px;
+	padding: 20px 30px;
 	box-sizing: border-box;
 }
-
+.brand-txt{
+	color: $brand-color
+}
+.brand2-txt{
+	color: $brand-color2
+}
+.brand3-txt{
+	color: #f47a54
+}
 header {
 	padding-bottom: 50px;
 
@@ -357,6 +365,18 @@ footer {
 }
 
 .darker {
-	background: #f8fafb;
+	background: #c9e5ef;
 	padding: 60px 0;
 }
+
+.darker2 {
+	background: $brand-color2;
+	padding: 60px 0;
+}
+
+.darker3 {
+	background: $brand-color;
+	padding: 60px 0;
+}
+
+

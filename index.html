@@ -1,13 +1,22 @@
 ---
 layout: default
 title: "Kiran Foundation : I am Possible!"
+carousels:
+  - images: 
+    - image: /images/imp/1.jpg
+    - image: /images/imp/2.jpg
+    - image: /images/imp/3.jpg
+    - image: /images/imp/4.jpg
 ---
 <header>
+		{% include carousel.html height="50" unit="%" duration="7" number="1" %}
 	<div class="container">
 		<div class="column">
 			<div vertical-align="center">
-				<h1 class="editable" align="center">KIRAN FOUNDATION</h1>
-				<p class="editable" align="center">This is not just an organization, We're a family.</p>
+				<h1 class="editable brand-txt" align="center">KIRAN FOUNDATION</h1>
+				<p class="editable" align="center">If a hardworking and taltented youth can not fullfil his dreams due to lack of resources, it is failure of the whole society.
+					 We are a family of like minded people on a mission to change this.
+				</p>
 				<br/>
 				<div class="button" align="center">
 					<a href="/about-us/">Know more</a>
@@ -15,28 +24,27 @@ title: "Kiran Foundation : I am Possible!"
 			</div>
 		</div>
 		<div class="column">
-			<img src="{{ site.baseurl }}/images/mom.jpg" alt="Smt. Kiran Jain">
-
+			<img src="{{ site.baseurl }}/images/ma/home.png" alt="Smt. Kiran Jain">
+	
 		</div>
 	</div>
 </header>
 
 <div class="darker">
 	<div class="container">
-		<h2 class="editable">Updates</h2>
+		<h2 class="editable brand3-txt">Updates</h2>
 		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
 		<div class="posts">
 			{% for post in site.posts limit:3 %}
 			
 				<div class="post">
-					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
+					<a href="{{ post.url }}" ><div class="image" style="background-image: url({{ post.featured_image}})"></div> </a>
 					<div class="post-content">
-						<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
 						<h3>{{ post.title }}</h3>
 
 						{{ post.content }}
 				
-						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
+						<p ><a href="{{ post.url }}" class="btn"> read more</a></p>
 					</div>
 				</div>
 			{% endfor %}
@@ -48,7 +56,7 @@ title: "Kiran Foundation : I am Possible!"
 	<h1 class="editable" style="text-align: center;">Our Initiatives </h1> <br/>  <br/>
 	<div class="columns">
 		<div>
-			<img src="{{ site.baseurl }}/images/i1.jpg" width="600" alt="img">
+			<img src="{{ site.baseurl }}/images/pratibha.png"" width="600" alt="img">
 		</div>
 		<div>
 			<h2 class="editable">किरण प्रतिभा</h2>
@@ -76,17 +84,17 @@ title: "Kiran Foundation : I am Possible!"
 				</div>
 		</div>
 		<div>
-			<img src="{{ site.baseurl }}/images/i2.jpg" width="600" alt="img">
+			<img src="{{ site.baseurl }}/images/shakti.png" width="600" alt="img">
 		</div>
 	</div>
 </div>
-<div class="container">
+<!-- div class="container">
 	<div class="columns">
 		<div>
-			<img src= "{{ site.baseurl }}/images/i3.jpg" width="600" alt="img">
+			<img src= "{{ site.baseurl }}/images/samman.png" width="600" alt="img">
 		</div>
 		<div>
-			<h2 class="editable">किरण ज्ञान/किरण सम्मान</h2>
+			<h2 class="editable">किरण सम्मान</h2>
 
 			<p class="editable">We regularly organized various free workshops. Our workshops are conducted by subject matter experts and are 
 				aimed to provide inspiration along with the information. We also provide one-on-one career counselling and guidence on the 
@@ -96,20 +104,23 @@ title: "Kiran Foundation : I am Possible!"
 	</div>
 </div>
 <div class="container">
-	<hr>
-	<blockquote>
-		<p class="quote editable">कर्म ही तुम्हारी तपस्या है।</p>
-		<!-- div class="attribute">
-			<p class="meta">
-				<span class="image"><img class="editable" src="{{ site.baseurl }}/images/wooly.jpg" alt="Wooly"></span>
-				<span class="author editable"><strong>Wooly McBaa</strong></span>
-			</p>
-		</div -->
-	</blockquote>
-</div>
-<div class="container">
-	<h1 class="editable" style="text-align: center;">I am Possible!</h1>
+	<div class="columns">
+		
+		<div>
+			<h2 class="editable">किरण ज्ञान</h2>
 
+			<p class="editable">Confident and empowered women are essential for a strong and resilient society. Unfortunately, vitality of 
+				women as a catalyst for change is grossly underestimated in our society. Through this program we provide vocational and 
+				life skills trainings for women in their native language.We not only train them but also connect them to opportunities based on thier skills and constraints.</p>
+		</div>
+		<div>
+			<img src="{{ site.baseurl }}/images/gyan.png" width="600" alt="img">
+		</div>
+	</div>
+</div -->
+
+<div class="darker">
+<div class="container">
 	<ul class="thirds">
 		<li>
 			<div class="image">{% include icons/site.html icon="vision" %}</div>
@@ -130,15 +141,28 @@ title: "Kiran Foundation : I am Possible!"
 		</li>
 	</ul>
 </div>
+</div>
+
+<div class="container">
+	<blockquote>
+		<p class="quote editable">कर्म ही तुम्हारी तपस्या है।</p>
+	</blockquote>
+</div>
+
 
 
 <div class="darker">
 	<div class="container">
-		<h2 class="editable">Join us</h2>
-		<p class="editable" style="text-align: center;">Sign up to hear the latest news and progress in our fight for the sheep vote.</p>
+		<h2 class="editable">Volunteers / Internship </h2>
+		<p class="editable" style="text-align: center;">
+			With more helping hands we can support more kids through our scholarship program. 
+			We need support in increaing reach to kids, raising funds, mentoring children, website maintainence, building parnerships, starting new initiatives etc. 
+			You don't have to make big commitments, few hours every week goes long way.
+		</p>
+		</br>
 		<form action="{{ site.newsletter_action }}" method="post">
 			<input type="text" name="EMAIL" placeholder="Email">
-			<input type="submit" value="Sign up"/>
+			<input type="submit" value="Join"/>
 		</form>
 	</div>
 </div>

@@ -1,8 +1,8 @@
 # ----
 # Site
 
-title: Cause Template
-url: https://clean-oryx.cloudvent.net
+title: Kiran Foundation
+url: https://kiran.foundation
 baseurl:
 google_analytics_key:
 
@@ -16,8 +16,7 @@ author:
 social:
   name: Cause Template
   links:
-    - https://github.com/CloudCannon/cause-jekyll-template
-
+    - 
 # -----
 # Build
 

@@ -1,8 +1,8 @@
 ---
-title: Our first update
+title: Advance Canva
 author_staff_member: wooly-mcbaa
 date: 2023-04-05
-featured_image: https://unsplash.it/570/400?image=1044
+featured_image: /images/1.png
 ---
 
 This is just the beginning. I'm working on updates.
