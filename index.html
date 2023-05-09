@@ -16,12 +16,16 @@ carousels:
 		<div class="column">
 			<div vertical-align="center">
 				<h1 class="editable brand-txt" align="center">KIRAN FOUNDATION</h1>
-				<p class="editable" align="center">If a hardworking and taltented youth can not fullfil his dreams due to lack of resources, it is failure of the whole society.
-					 We are a family of like minded people on a mission to change this.
+				<p class="editable" align="center">
+					If a hardworking, taltented youth can not fullfil his dreams due to lack of resources, it is failure of the whole society. We dream of a society where merit and hard work is supported irrespective of the financial, physical or social status. 
+					Kiran Foundaton is family of like minded, capable and compassionate people and we are committed to bring a fundamental shift in our society. 
+				</p>
+				<br/>	
+				<p>
 				</p>
 				<br/>
 				<div class="button" align="center">
-					<a href="/about-us/">Know more</a>
+					<a href="/about/">Know more</a>
 				</div>
 			</div>
 		</div>
@@ -40,13 +44,17 @@ carousels:
 			{% for post in site.posts limit:3 %}
 			
 				<div class="post">
+					{% if post.more == true %}
 					<a href="{{ post.url }}" ><div class="image" style="background-image: url({{ post.featured_image}})"></div> </a>
+					{% else %}
+					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
+					{% endif %}
 					<div class="post-content">
-						<h3>{{ post.title }}</h3>
-
-						{{ post.content }}
-				
-						<p ><a href="{{ post.url }}" class="btn"> read more</a></p>
+						<h3> <b>{{ post.title }}</b></h3>
+						{{ post.summary }}
+						{% if post.more == true %}
+							<p ><a href="{{ post.url }}" class="btn"> read more</a></p>
+						{% endif %}
 					</div>
 				</div>
 			{% endfor %}

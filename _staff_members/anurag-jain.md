@@ -1,4 +1,4 @@
 ---
-name: Wooly McBaa
+name: Anurag Jain
 image: /images/wooly.jpg
 ---
