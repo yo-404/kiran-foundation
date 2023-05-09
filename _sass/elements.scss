@@ -65,8 +65,6 @@ form {
 	margin: 0 auto;
 
 	input[type="text"] {
-		flex-grow: 1;
-		flex-shrink: 1;
 		width: 100%;
 		border: 1px solid #ddd;
 
@@ -76,6 +74,17 @@ form {
 			border-bottom-left-radius: 30px;
 		}
 
+		&:focus {
+			box-shadow: 0 0 5px 0 $brand-color;
+			outline: none;
+		}
+	}
+
+	input[type="textarea"] {
+		flex-grow: 1;
+		flex-shrink: 1;
+		width: 100%;
+		border: 1px solid #ddd;
 		&:focus {
 			box-shadow: 0 0 5px 0 $brand-color;
 			outline: none;

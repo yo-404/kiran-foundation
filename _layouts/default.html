@@ -103,26 +103,43 @@
 				</div>
 
 				<div class="sharing">
-					<a class="facebook" href="https://www.facebook.com/{{ site.data.company.facebook }}">
-						{% include icons/social-media.html social_icon="facebook" %}
-					</a>
-					<a class="twitter" href="https://twitter.com/{{ site.data.company.twitter }}">
-						{% include icons/social-media.html social_icon="twitter" %}
-					</a>
-					<a class="youtube" href="https://youtube.com/{{ site.data.company.youtube }}">
-						{% include icons/social-media.html social_icon="youtube" %}
-					</a>
-					<a class="youtube" href="https://youtube.com/{{ site.data.company.instagram }}">
-						{% include icons/social-media.html social_icon="instagram" %}
-					</a>
+					<p>
+						<a class="facebook" href="https://www.facebook.com/{{ site.data.company.facebook }}">
+							{% include icons/social-media.html social_icon="facebook" %}
+						</a>
+						<a class="twitter" href="https://twitter.com/{{ site.data.company.twitter }}">
+							{% include icons/social-media.html social_icon="twitter" %}
+						</a>
+						<a class="youtube" href="https://youtube.com/{{ site.data.company.youtube }}">
+							{% include icons/social-media.html social_icon="youtube" %}
+						</a>
+						<a class="youtube" href="https://youtube.com/{{ site.data.company.instagram }}">
+							{% include icons/social-media.html social_icon="instagram" %}
+						</a>
+					</p>
+					<p class="phone">
+						<a href=" {{ site.data.company.whatsapp_link }}">
+							{% include icons/footer.html icon="whatsapp" %} {{ site.data.company.whatsapp }}
+						</a>
+					</p>
+					
 				</div>
 				<div class="about">
-					<a href="{{ site.baseurl }}/privacy">
-						Privacy Policy
-					</a>
-				</p>
+					<p>
+						<a href="{{ site.baseurl }}/privacy">
+							Privacy Policy
+						</a>
+					</p>
+					<p>
+						<a href="{{ site.baseurl }}/about">
+							About Us
+						</a>
+					</p>
 				</div>
 			</div>
+			<!--div class="container">
+				<p>{{site.data.company.phrase }} </p>
+			</div-->
 		</footer>
 		<p class="copyright">
 			<a href="https://kiran.fooundation/">
