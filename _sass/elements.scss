@@ -9,6 +9,12 @@ html, body {
 	text-indent: 30px;
 }
 
+.box {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	flex: 1 1 auto;
+  }
 img {
 	max-width: 100%;
 }
