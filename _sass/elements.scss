@@ -287,13 +287,26 @@ section {
   /*    Wide Mobile Layout: 480px. */
   @media only screen and (min-width: 480px) and (max-width: 767px) {
 	.header-content h1 {
-	  font-size: 70px; } }
+	  font-size: 70px; 
+	} 
+	h1 {
+		padding-top: 10px;
+	} 
+  }
   @media only screen and (max-width: 520px) {
 	.col-xxs-12 {
-	  width: 100%; } }
+	  width: 100%; } 
+	  h1 {
+		padding-top: 10px;
+	  } 
+	}
   @media only screen and (max-width: 480px) {
 	header {
-	  height: 50vh; } }
+	  height: 30vh; }
+	  h1 {
+		padding-top: 10px;
+	  } 
+	}
   h3.section_title {
 	font-size: 35px;
 	color: #353535; }
