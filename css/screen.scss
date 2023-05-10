@@ -30,7 +30,7 @@ body {
   overflow-x: hidden;
 }
 
-img:not(.kf_logo) {
+img:not(.kf-logo) {
   max-width: 100%;
   height: auto;
   border: none;
@@ -523,6 +523,17 @@ input {
    text-align: center;
   }
 
+  .col-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .col-wrapper div:first-child {
+    order: 1;
+  }
+  .columns h2{
+    text-align: center;
+  }
+
   .blog-content { margin-bottom: 30px; }
   .blog-content p { text-align: center; }
   .blog-content span { margin-left: 0; }
@@ -607,7 +618,7 @@ input {
 }
 
 @media only screen and (max-width: 480px) {
-  header { height: 50vh; }
+  header { height: 30vh; }
 }
 
 h3.section_title {
