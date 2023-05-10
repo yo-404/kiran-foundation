@@ -5,24 +5,7 @@ html, body {
 	color: #333;
 	min-width: 380px;
 }
-.para-offset {
-	text-indent: 30px;
-}
-.image-center{
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-	img{
-	    vertical-align: middle;
-		margin-top: 20px;
-	}
-}
-.box {
-	display: flex;
-	flex-flow: column;
-	height: 100%;
-	flex: 1 1 auto;
-  }
+
 img {
 	max-width: 100%;
 }

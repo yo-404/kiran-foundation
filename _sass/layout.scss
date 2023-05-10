@@ -6,6 +6,26 @@
 	padding: 20px 30px;
 	box-sizing: border-box;
 }
+.para-offset {
+	text-indent: 30px;
+}
+.image-center{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+	img{
+	    vertical-align: middle;
+		margin-top: 20px;
+	}
+}
+.box {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	flex: 1 1 auto;
+  }
+
+
 .brand-txt{
 	color: $brand-color
 }
@@ -18,6 +38,15 @@
 header {
 	padding-bottom: 50px;
 	padding-top: 50px;
+
+	:after {
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+	}
 
 	@media #{$desktop} {
 		.container {
