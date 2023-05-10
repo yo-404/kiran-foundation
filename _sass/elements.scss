@@ -8,7 +8,15 @@ html, body {
 .para-offset {
 	text-indent: 30px;
 }
-
+.image-center{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+	img{
+	    vertical-align: middle;
+		margin-top: 20px;
+	}
+}
 .box {
 	display: flex;
 	flex-flow: column;
@@ -65,7 +73,7 @@ section {
 	padding: 60px 0;
 }
 
-form {
+.cc form {
 	display: flex;
 	max-width: 500px;
 	margin: 0 auto;
@@ -132,6 +140,8 @@ form {
 		background: darken($brand-color, 5%);
 	}
 }
+
+
 /* Media Queries
 ----------------------*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
