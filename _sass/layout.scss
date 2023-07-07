@@ -395,8 +395,9 @@ body{
 }
 
 .darker {
-	background: #c9e5ef;
+	
 	padding: 60px 0;
+	
 }
 
 .darker2 {
@@ -424,4 +425,10 @@ body{
 
 .li_selection{
 	color: #888888;
+}
+.update-align{
+	background: #c9e5ef;
+	display: flex;
+	justify-content: center;
+	text-align: center;
 }
