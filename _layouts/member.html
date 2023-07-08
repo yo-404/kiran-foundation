@@ -10,15 +10,21 @@ layout: default
       <br/>
       <br/>
       <p>
-        <a href="{{ page.media.email }}" target="_blank">
-          <i class="fa fa-envelope" style="font-size:24px"></i>
-        </a>
-        <a href="{{ page.media.linkedin }}" target="_blank">
-          <i class="fa fa-linkedin-square" style="font-size:24px"></i>
-        </a>
-        <a href="{{ page.media.instagram }}" target="_blank">
-          <i class="fa fa-instagram" style="font-size:24px"></i>
-        </a>
+                 {% if page.media.email %}
+                    <a href="{{ page.media.email }}" target="_blank">
+                      <i class="fa fa-envelope" style="font-size:24px"></i>
+                    </a>
+                  {% endif %}
+                  {% if page.media.linkedin %}
+                    <a href="{{ page.media.linkedin }}" target="_blank">
+                      <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+                    </a>
+                  {% endif %}
+                  {% if page.media.instagram %}
+                    <a href="{{ page.media.instagram }}" target="_blank">
+                      <i class="fa fa-instagram" style="font-size:24px"></i>
+                    </a>
+                  {% endif %}
       </p>
     </div>	
       
