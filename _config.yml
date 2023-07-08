@@ -33,6 +33,8 @@ social:
 timezone: Etc/UTC
 
 collections:
+  members:
+    output: true
   staff_members:
     _icon: account_circle
     _hide_content: true
