@@ -3,7 +3,7 @@ layout: member
 title: Keshu Jain
 featured_image: /images/volunteers/keshu.jpg
 more: true
-type: Volunteer
+type: edsTeacher
 role: Teacher, part of digital cell
 media:  
   email: mailto:keshujain9080@gmail.com

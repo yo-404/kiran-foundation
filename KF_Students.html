@@ -3,10 +3,10 @@ layout: default
 title: More Students | Kiran Foundation
 ---
 <div class="darker">
-  <div class="container">
+  <div class="container" style="padding: 20px 60px;">
     <h2 class="editable brand3-txt">Kiran Pratibha Students</h2>
     <div class="members">
-      <div class="row" style="margin-right: -250px;">
+      <div class="row">
         {% assign count = 0 %}
         {% for member in site.members %}
           {% if member.type == 'Student' %}
@@ -39,11 +39,19 @@ title: More Students | Kiran Foundation
                   {% endif %}
                 </div>
               </div>
-              <br/>
-              <br/>
-              <br/>
             </div>
+            
             {% assign count = count | plus: 1 %}
+            {% if count == 4 %}
+             
+              {% assign count = 0 %}
+              {% if forloop.last == false %}
+                <div class="row">
+                </div>
+                <br/>
+                <br/>
+              {% endif %}
+            {% endif %}
           {% endif %}
         {% endfor %}
       </div>

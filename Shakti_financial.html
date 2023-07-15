@@ -1,0 +1,178 @@
+---
+layout: default
+title: "Financial Skills : I am Possible!"
+---
+<header>
+	<div class="container">
+		<!--div class="lawvideo">
+		<video width="100%" controls>
+			<source src="/videos/efs.mp4" type="video/mp4">
+		 
+		  </video>
+		</div-->
+	</div>
+</header>
+
+
+<div class="container">
+	<div class="columns col-wrapper">
+        <div>
+			<img src="{{ site.baseurl }}/images/efs/finance.png" width="600" alt="img">
+		</div>
+		<div vertical-align="center">
+			<h1 class="editable brand-txt" align="center">Why learn EFS</h1>
+			<p class="editable" align="center">
+				
+				Kiran foundation presents "Essential Finance Skills For Women", this is a special course designed with essential information about money and finance,  which every women of this nation should be aware of. 
+
+				This course covers topic such as Banking System, Basic Behavorial Economics, Savings, Overview of various Investment Options, Investing in Gold, Importance of Insurance, Preparing a useful will etc.  
+
+				The course will last 8 weeks from 21st May 2022 to 9th July 2022. Classes will be every Saturday at 3:30 PM IST. We will try to answer all your queries during the course. The participants who complete all classes will also receive a certifacte at the end of the course. 
+				 </p>
+				
+			<br/>	
+			
+			<br/>
+		</div>
+	</div>
+</div>
+
+<div class="shaktipage">
+  <div class="darker">
+	<div class="container">
+	  <h2 class="editable brand3-txt">Past Programs</h2>
+	  <div class="row">
+		<div class="column">
+		  <img src="/images/efs/efs2023.png" alt="Snow" style="width:100%; border: 5px solid #fff; outline: 2px solid #f47a54;">
+		  <br/>
+		  <br/>
+		  <h2 style="color: black; font-size: 15px;">EFS 2023</h2>
+		</div>
+		<div class="column">
+		  <img src="/images/efs/efs2022.png" alt="Forest" style="width:100%; border: 5px solid #fff; outline: 2px solid #f47a54;">
+		  <br/>
+		  <br/>
+		  <h2 style="color: black; font-size: 15px;">EFS 2022</h2>
+		</div>
+		<div class="column">
+		  <img src="/images/efs/efs2022 (2).png" alt="Mountains" style="width:100%; border: 5px solid #fff; outline: 2px solid #f47a54;">
+		  <br/>
+		  <br/> 
+		  <h2 style="color: black; font-size: 15px;">EFS 2022</h2>
+		</div>
+	  </div>
+	  <div class="button" align="center">
+		<a class="#" href="https://classroom.google.com/c/NjE1ODU5MTczMDU0?cjc=bderijc" target="_blank">Join Classroom</a>
+	</div>
+	</div>
+  </div>
+</div>
+
+<div class="shaktipage">
+  <div>
+	<div class="container">
+	  <b><h1 class="editable brand-txt" align="center" style="font-size: 30px;">Videos</h1></b>
+  
+	  <div class="row">
+		<div class="column">
+		  <iframe width="460" height="315" src="https://www.youtube.com/embed/F-wJgdEG_6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="Snow" style="width:100%; border: 5px solid #fff; outline: 5px solid #f47a54;"></iframe> 
+		</div>
+		<div class="column">
+		  <iframe width="460" height="315" src="https://www.youtube.com/embed/2jIBvpwAB8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="Snow" style="width:100%; border: 5px solid #fff; outline: 5px solid #f47a54;"></iframe> 
+		</div>
+		<div class="column">
+		  <iframe width="460" height="315" src="https://www.youtube.com/embed/zXQUHdC-K4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="Snow" style="width:100%; border: 5px solid #fff; outline: 5px solid #f47a54;"></iframe> 
+		</div>
+	  </div>
+	</div>
+	</div>
+  </div>
+  
+<div class="darker">
+	<div class="container">
+	  <h2 class="editable brand3-txt">MEET OUR TEACHERS</h2>
+	  <div class="members" style="justify-content: center;">
+		{% assign teacher_members = site.members | where: 'type', 'EfsTeacher' %}
+			  
+		{% for member in teacher_members limit:4 %}
+		  <div class="member">
+			{% if member.more == true %}
+			  <a href="{{ member.url }}"><div class="image" style="background-image: url({{ member.featured_image }})"></div></a>
+			{% else %}
+			  <div class="image" style="background-image: url({{ member.featured_image }})"></div>
+			{% endif %}
+			<div class="member-content" align="center">
+			  <h3><b>{{ member.title }}</b></h3>
+			  {% if member.media.email %}
+				<a href="{{ member.media.email }}" target="_blank">
+				  <i class="fa fa-envelope" style="font-size:24px"></i>
+				</a>
+			  {% endif %}
+			  {% if member.media.linkedin %}
+				<a href="{{ member.media.linkedin }}" target="_blank">
+				  <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+				</a>
+			  {% endif %}
+			  {% if member.media.instagram %}
+				<a href="{{ member.media.instagram }}" target="_blank">
+				  <i class="fa fa-instagram" style="font-size:24px"></i>
+				</a>
+			  {% endif %}
+			  {% if member.more == true %}
+				<p><a href="{{ member.url }}" class="btn">Read more</a></p>
+			  {% endif %}
+			</div>
+		  </div>
+		{% endfor %}
+	  </div>
+	</div>
+  </div>
+  
+
+<!--div class="container-fluid py-5">
+	<div class="container py-5">
+		<div class="text-center mb-5">
+			<h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Testimonial</h5>
+			<h1>What Say Our Students</h1>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
+				<div class="owl-carousel testimonial-carousel">
+					<div class="text-center">
+						<i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+						<h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
+						<img class="img-fluid mx-auto mb-3" src="/images/pratibha_page/aditi.jpg" alt="img" style="border-radius: 50%; width: 100px; outline: 2px solid #f47a54;">
+						<h5 class="m-0">Client Name</h5>
+						<span>Profession</span>
+					</div>
+					<div class="text-center">
+						<i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+						<h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
+						<img class="img-fluid mx-auto mb-3" src="/images/pratibha_page/aditi.jpg" alt="img" style="border-radius: 50%; width: 100px; outline: 2px solid #f47a54;">
+						<h5 class="m-0">Client Name</h5>
+						<span>Profession</span>
+					</div>
+					<div class="text-center">
+						<i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+						<h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
+						<img class="img-fluid mx-auto mb-3" src="/images/pratibha_page/aditi.jpg" alt="img" style="border-radius: 50%; width: 100px; outline: 2px solid #f47a54;">
+						<h5 class="m-0">Client Name</h5>
+						<span>Profession</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div-->
+
+<div class="darker">
+	<div class="container">
+		<h2 class="editable"> Join Shakti Group </h2>
+		<p class="editable" style="text-align: center;"> We run regular courses and workshops under the Kiran Shakti program, join our WhatsApp group to get the latest updates on Kiran Shakti Program and connect with like-minded progressive women.
+       <br/>
+       <br/>
+		<div class="button" align="center">
+			<a href="{{site.data.company.whatsapp_link2 }}"> <i class="fa fa-whatsapp" aria-hidden="true" style="font-size : 20px ;""></i> &nbsp; &nbsp; Conact on Whatsapp </a>
+		</div>
+	</div>
+</div>

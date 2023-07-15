@@ -3,7 +3,7 @@ layout: member
 title: Shreya Jain
 featured_image: /images/volunteers/shreya.jpg
 more: true
-type: Volunteer
+type: edsTeacher
 role: Teacher, part of digital cell
 media:  
   email: mailto:sjain902746@gmail.com
