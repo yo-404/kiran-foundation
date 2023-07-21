@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Shreya Jain
-featured_image: /images/pratibha_page/sjainnew.png
+featured_image: /images/pratibha_page/sjain.png
 more: true 
 type: Student
 media:  

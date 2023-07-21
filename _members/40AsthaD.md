@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Astha Jain
-featured_image: /images/pratibha_page/asthaD.jpg
+featured_image: /images/pratibha_page/AsthaD.png
 more: true 
 type: Student
 media:  

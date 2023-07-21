@@ -350,6 +350,7 @@ body{
 .members {
 	@media #{$desktop} {
 		display: flex;
+		margin: 0 -125px 0 -225px;
 	}
 	margin: 0 -65px 0 -300px;
 	.member {
