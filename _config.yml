@@ -33,6 +33,8 @@ social:
 timezone: Etc/UTC
 
 collections:
+  shakti_course:
+    output: true
   members:
     output: true
   staff_members:
