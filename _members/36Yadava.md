@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Yadava H C 
-featured_image: /images/pratibha_page/yadava.jpg
+featured_image: /images/pratibha_page/yadva.png
 more: true 
 type: Student
 media:  

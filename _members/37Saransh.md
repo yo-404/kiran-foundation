@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Saransh Jain
-featured_image: /images/pratibha_page/saransh.jpg
+featured_image: /images/pratibha_page/saransh1.png
 more: true 
 type: Student
 media:  
