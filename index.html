@@ -46,9 +46,9 @@ carousels:
 			
 				<div class="post">
 					{% if post.more == true %}
-					<a href="{{ post.url }}" ><div class="image" style="background-image: url({{ post.featured_image}})"></div> </a>
+					<a href="{{ post.url }}" ><div class="image" style="background-image: url({{post.featured_image}})"></div> </a>
 					{% else %}
-					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
+					<div class="image" style="background-image: url({{post.featured_image}})"></div>
 					{% endif %}
 					<div class="post-content">
 						<h3> <b>{{ post.title }}</b></h3>
