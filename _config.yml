@@ -37,6 +37,8 @@ collections:
     output: true
   members:
     output: true
+  testis:
+    output: true
   staff_members:
     _icon: account_circle
     _hide_content: true

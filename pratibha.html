@@ -103,6 +103,53 @@ title: Kiran Pratibha | Kiran Foundation
 		</div>
 	</div>
 </div>
+		
+<div class="container">
+  <h2>What Our Students Say </h2>
+  <section class="testi-container">
+    <div class="testimonial mySwiper">
+      <div class="testi-content swiper-wrapper">
+        {% assign pratibha_testi = site.testis | where: 'tags', 'kfpratibha' %}
+        {% for testi in pratibha_testi %}
+
+        <div class="slide swiper-slide">
+          <img src="{{ testi.featured_image }}" alt="" class="image" />
+          <p>{{ testi.content }}</p>
+          <i class="bx bxs-quote-alt-left quote-icon"></i>
+          <div class="details">
+            <span class="name">{{ testi.title }}</span>
+            <span class="job">{{ testi.place }}</span>
+          </div>
+        </div>
+
+        {% endfor %}
+      </div>
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+</div>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      grabCursor: true,
+      loop: true,
+      autoplay: {
+delay: 3000, 
+},
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
 <div class="darker">
 	<div class="container">
