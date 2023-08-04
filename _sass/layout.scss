@@ -638,3 +638,55 @@ body{
 // 
 
 // testimonial css ends
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
+
+
+
+.card-container{
+  
+  background-color: #c9e5ef;
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  
+}
+.container_copy {
+	text-align: center;
+ 
+  background: #fff;
+//   max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding: 40px 40px 40px 40px;
+  margin: 25px;
+}
+.container_copy h3 {
+  margin: 0 0 0.5rem 0;
+  color: #070707;
+  font-size: 15px
+}
+
+.container_copy h1 {
+  margin: 0 0 1rem 0;
+  font-size: 25px;
+  letter-spacing: 0.5px;
+  color: #F1592A;
+}
+
+
+
+
+
+// @media only screen and (max-width: 650px) {
+//   body {
+//     background-color: black;
+//   }
+
+  
+// }
