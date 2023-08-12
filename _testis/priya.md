@@ -8,4 +8,4 @@ tags:
   
 featured_image: /images/testimonial/priya.png
 ---
-Very useful and prectical,knowledgeable . Thank you so much for that.
+Guidance and support from Kiran Foundation is very useful and practical. Thank you so much for everything.

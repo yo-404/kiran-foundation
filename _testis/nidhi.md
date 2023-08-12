@@ -7,4 +7,4 @@ tags:
   
 featured_image: /images/testimonial/nidhi.png
 ---
-It was amazing though I didnt attend the live sessions due to some personal issues but I learned through recorded ones.gh recordings.
+I could not attend the live sessions due to some personal circumstances but the recordings helped me learn. Thanks Kiran Foundation for being there when I needed.
