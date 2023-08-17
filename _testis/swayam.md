@@ -7,4 +7,4 @@ tags:
   
 featured_image: /images/pratibha_page/swayam.jpg
 ---
-"Association with Kiran Foundation has been exceptionally beneficial for me as I receive all the necessary support I require, not just financial, making it an invaluable resource for my needs. The members of Kiran Foundation have been incredibly supportive, always going above and beyond to provide me with the best possible assistance tailored for my development."
+What sets Kiran Foundation apart is the personal touch they bring to their support. The mentors invest their time to interact with students, helping us navigate the various challenges life throws at us. This isn't just about academic excellence; it's about preparing us for life beyond textbooks, equipping us with life skills that will serve us well in any situation. With gratitude, I look forward to continuing this journey with the foundation, inspired by the way they go above and beyond to make a difference in our lives.
