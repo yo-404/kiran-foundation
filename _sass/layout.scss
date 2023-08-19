@@ -288,6 +288,7 @@ body{
 .posts {
 	@media #{$desktop} {
 		display: flex;
+		
 	}
 	margin: 0 -20px;
 	.post {
@@ -308,6 +309,9 @@ body{
 			background-size: cover;
 			border-top-right-radius: 3px;
 			border-top-left-radius: 3px;
+			@media (max-width: 768px){
+				height: 395px;
+			}
 		}
 
 		.post-content {
