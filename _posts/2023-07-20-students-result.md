@@ -1,5 +1,5 @@
 ---
-title: Kiran Pratiha Schlorship Result 2023
+title: Kiran Pratibha Schlorship Result 2023
 author_staff_member:
 date: 2023-07-20
 featured_image: /images/posts/pratibharesult.png
