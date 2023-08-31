@@ -9,6 +9,6 @@ media:
   linkedin: false 
   instagram: false    
 quote:  Don't compare yourself with anyone in this world, if you compare , You are insulting yourself. 
-about: Kiran Foundation has been instrumental in shaping my successful academic journey by providing comprehensive career guidance, timely solutions to academic issues, and invaluable financial support to deserving students.
+about: I am Mouli jain, currently studying B.sc hons. Statistics from Lady Shri Ram College. I joined Kiran Foundation in 2023. I had a very good experience with this Foundation. Kiran Foundation not only provides financial support but also provide proper mentorship and guidance and moral support.
 ---
     
