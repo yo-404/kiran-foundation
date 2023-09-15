@@ -288,6 +288,7 @@ body{
 .posts {
 	@media #{$desktop} {
 		display: flex;
+		
 	}
 	margin: 0 -20px;
 	.post {
@@ -303,6 +304,16 @@ body{
 
 
 		.image {
+			height: 300px;
+			background-position: center;
+			background-size: cover;
+			border-top-right-radius: 3px;
+			border-top-left-radius: 3px;
+			@media (max-width: 768px){
+				height: 395px;
+			}
+		}
+		.ima_ge {
 			height: 300px;
 			background-position: center;
 			background-size: cover;
@@ -448,6 +459,7 @@ body{
 .darker {
 	background: #c9e5ef;
 	padding: 60px 0;
+
 	
 }
 
@@ -530,10 +542,11 @@ body{
 	
 	max-width: 800px;
 	margin: 0 auto; 
+	padding: 15px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #f47a54;
+	background-color:#F1592A;;
 	max-height: fit-content;
   }
   .testimonial {
